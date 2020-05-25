@@ -2,9 +2,9 @@
 Narzędzie monitorujące ważność certyfikatów - zdalnych i lokalnych z systemem powiadomień (bash,python)
 
 Wykorzystane narzędzia:
-Język skryptowy - BASH
-Python
-crontab
+Język skryptowy - BASH,
+Python,
+tablica crontab.
 
   Uruchomienie narzędzia:
 1. Pierwszym krokiem jest wpisanie ścieżki folderu z lokalnymi certyfikatami oraz adresów IP ze zdalnymi certyfikatami w skrypcie: narzędzie_1.sh.
