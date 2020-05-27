@@ -1,4 +1,4 @@
-# monitoring-certyfikatow
+# certificates-monitoring
 A tool for monitoring the validity of certificates - remote and local with a notification system (bash,python)
 
 The tools used:
