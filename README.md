@@ -16,4 +16,4 @@ Program mail.py using system call subprocess launches narzedzie_1.sh, which conn
 
 To change  e-mail account, edit mail.py.
 
-Translated with www.DeepL.com/Translator (free version)
+
