@@ -1,17 +1,19 @@
 # monitoring-certyfikatow
-Narzędzie monitorujące ważność certyfikatów - zdalnych i lokalnych z systemem powiadomień (bash,python)
+A tool for monitoring the validity of certificates - remote and local with a notification system (bash,python)
 
-Wykorzystane narzędzia:
-Język skryptowy - BASH,
+The tools used:
+Script language - BASH,
 Python,
-tablica crontab.
+the crontab.
 
-  Uruchomienie narzędzia:
-1. Pierwszym krokiem jest wpisanie ścieżki folderu z lokalnymi certyfikatami oraz adresów IP ze zdalnymi certyfikatami w skrypcie: narzędzie_1.sh.
+  Starting the tool:
+The first step is to enter the folder path with local certificates and IP addresses with remote certificates in a script: narzedzie_1.sh.
 
-2. Następnie należy edytować program mail.py w celu podania ścieżki skryptu(narzędzie_1.sh), który będzie uruchamiany z pomocą wywołania subprocess.
+2. then edit mail.py to enter script path (narzedzie_1.sh), which will be launched by calling subprocess.
 
-  Mechanizm działania:
-Program mail.py za pomocą wywołania systemowego subprocess uruchamia skrypt narzedzie_1.sh, który łączy się za pomocą komendy openssl z serwerem na port 443(w przypadku certyfikatu zdalnego) i uzyskuje dostęp do poglądu certyfikatu. Następnie wyłuskuje potrzebne mu informacje, np. czy certyfikat jest ważny. Po wygenerowaniu raportu, program automatycznie wysyła wiadomość e-mail z załączonym raportem w postaci .txt do administratora. Jeśli certyfikat traci ważność za mniej niż 30 dni, lub już wygasł, raport nas o tym ostrzega. W tablicy crontab należy umieścić odpowiedni wpis, w celu automatycznego uruchamiania narzędzia.
+  The mechanism of operation:
+Program mail.py using system call subprocess launches narzedzie_1.sh, which connects via openssl command to server to port 443 (in case of remote certificate) and gets access to certificate view. Then it prints out the information it needs, e.g. if the certificate is valid. After the report is generated, the program automatically sends an e-mail with the attached report in the form of .txt to the administrator. If the certificate expires in less than 30 days, or it has already expired, the report warns us about it. An appropriate entry should be placed in the crontab table to automatically start the tool.
 
-W celu zmiany konta e-mail, należy edytować program mail.py.
+To change  e-mail account, edit mail.py.
+
+Translated with www.DeepL.com/Translator (free version)
